@@ -1,0 +1,165 @@
+/* src/assets/styles/HamburgerMenu.css */
+.hamburger-container {
+  z-index: 999;
+  position: absolute;
+  top: 25px; /* position the hamburger menu vertical */
+  right: 20px;
+  background-color:transparent;
+
+}
+
+.hamburger {
+  position: relative;
+
+  width: 50px;
+  height: 50px;
+  background-color:transparent !important;
+  z-index: 999;
+
+
+}
+
+/* .hamburger > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+} */
+
+.hamburger > div:before,
+.hamburger > div:after {
+  position: absolute;
+  top: 50%; /* position the hamburger menu bars / lines vertical */
+  left: 20%; /* position the hamburger menu */
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: rgba(128, 128, 128);;
+}
+
+.hamburger > div:before {
+  transform: translateY(-5px);
+  animation: burger3 250ms linear;
+}
+@keyframes burger3 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+}
+.hamburger > div:after {
+  transform: translateY(5px);
+  animation: burger4 250ms linear;
+}
+@keyframes burger4 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px) rotate(0deg);
+  }
+}
+
+.hamburger:hover > div {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+#menu {
+  display: none;
+}
+
+#menu:checked ~ .hamburger > div {
+  visibility: hidden;
+}
+
+#menu:checked ~ .hamburger > div:before,
+#menu:checked ~ .hamburger > div:after {
+  visibility: visible;
+  /* background-color: rgba(128, 128, 128); */
+  background-color: #f1f1f1;;
+
+  transform-origin: center center;
+  transform: translateY(0);
+
+}
+
+#menu:checked ~ .hamburger > div:before {
+  transform: translateY(0) rotate(-45deg);
+  animation: burger1 250ms linear;
+
+}
+@keyframes burger1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0) rotate(-45deg);
+  }
+}
+#menu:checked ~ .hamburger > div:after {
+  transform: rotate(45deg);
+  animation: burger2 250ms linear;
+}
+@keyframes burger2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0) rotate(45deg);
+  }
+}
+#menu:checked ~ .menu {
+  display: block;
+  height: 100%;
+}
+
+
+
+
+
+
+@media screen and (min-width: 769px) {
+  .hamburger-container {
+    display: none;
+  }
+}
+
+
+@media (hover: hover) {
+  .hamburger:hover > div {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+/* 
+
+this was a custom implementation based on the below.
+
+Source:
+https://www.sliderrevolution.com/resources/css-hamburger-menu/
+
+Author: Joshua Ward
+
+
+
+
+
+
+*/

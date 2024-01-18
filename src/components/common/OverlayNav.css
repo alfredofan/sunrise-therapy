@@ -1,0 +1,146 @@
+/* src/assets/styles/OverlayNav.css */
+
+/* 
+note:
+
+OVERLAY ANIMATION CONFIGURATION
+- must edit both .overlay and .overlay.open styles
+
+*/
+
+
+.overlay {
+
+  /* 
+  =====================
+    fade-in fade-out  
+  =====================
+  */
+  
+  height: 100%;
+  width: 100%; 
+  left: 0;
+  transition: width 0.5s, opacity 0.5s;  /* Use width for slide-in/slide-out effect, opacity for fade-in/fade-out effect */
+ 
+
+  /* 
+  =====================
+    slide in from top
+  =====================
+  */
+  
+  /* 
+  height: 0;
+  width: 100%; 
+  left: 0; 
+  transition: height 0.5s, opacity 0.5s;*/ /* Use width for slide-in/slide-out effect, opacity for fade-in/fade-out effect */
+ 
+
+
+  /* 
+  ======================
+    slide in from left
+  ======================
+  */
+  /*
+  height: 100%;
+  width: 0; 
+  left: 0; 
+  transition: width 0.5s, opacity 0.5s; */ /* Use width for slide-in/slide-out effect, opacity for fade-in/fade-out effect */
+ 
+
+  /* 
+  =======================
+    slide in from right
+  =======================
+  */
+  /* 
+  height: 100%;
+  width: 0; 
+  right: 0; 
+  transition: width 0.5s, opacity 0.5s;*/ /* Use width for slide-in/slide-out effect, opacity for fade-in/fade-out effect */
+ 
+
+  top: 0;
+  position: fixed;
+  z-index: -1;
+  background-color: rgba(205, 104, 76, 0.9);
+  /* background-color: rgba(68, 153, 177, 0.9); */
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+  opacity: 0;
+}
+
+
+  /* 
+  =====================
+    slide in from top
+  =====================
+  */
+
+  .overlay.open {
+    height: 100%;
+    opacity: 1;
+    z-index: 1;
+
+  } 
+
+
+  /* 
+  ================================
+    slide in from right or left
+  ================================
+  */
+   /*
+    .overlay.open {
+      width: 100%;
+      opacity: 1;
+    } 
+  */
+
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  opacity: 1; /* Set initial opacity to 1 */
+  transition: opacity 0.5s; /* Add transition for fade-out effect */
+}
+
+.overlay a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+  
+  font-family: 'Julius Sans One';
+
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: rgba(128, 128, 128);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}

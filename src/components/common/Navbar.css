@@ -1,0 +1,91 @@
+/* src/assets/styles/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  color:  rgba(205, 104, 76);
+  font-family: 'Julius Sans One';
+
+}
+
+.logo-container img {
+  max-height: 80px !important; /* Adjust the height as needed */
+  width: auto !important;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color:  rgba(205, 104, 76);
+  font-size: 16px;
+  transition: color 0.3s;
+  
+}
+
+.nav-links a:hover {
+  color: rgba(68, 153, 177);; /* Change color on hover */
+}
+
+.appointment-button button {
+  background-color:  rgba(68, 153, 177);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  font-family: 'Julius Sans One';
+
+}
+
+.appointment-button button:hover {
+  background-color:rgba(205, 104, 76); /* Change color on hover */
+}
+
+/* Add any additional responsive styling as needed */
+@media screen and (max-width: 768px) {
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .appointment-button button {
+    display: none; /* Hide links on small screens initially */
+
+  }
+  
+  .logo-container img {
+    padding-left: 20px;
+  }
+ 
+  .nav-links {
+    display: none; /* Hide links on small screens initially */
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #253443;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show links when the active class is present */
+  }
+
+  .nav-links a {
+    font-size: 18px; /* Adjust font size for better visibility on small screens */
+  }
+
+
+  #menu:checked ~ .navbar .nav-links {
+    display: flex;
+  }
+}
