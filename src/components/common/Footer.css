@@ -1,0 +1,100 @@
+/* src/components/common/Footer.css */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #fff;
+  color: rgb(205, 104, 76);
+  padding: 20px;
+  align-items: center;
+  font-family: 'Julius Sans One';
+  width: 100%;
+  /* min-height: 70vh; */
+}
+
+/* .footer-section {
+  margin-bottom: 20px;
+} */
+
+#LogoAndSocial {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+}
+
+.footer-section img {
+  max-height: 150px !important; /* Adjust the height as needed */
+  width: auto !important;
+}
+
+#SitemapAndDetails{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+
+}
+
+#SitemapAndDetails a{
+  padding: 10px!important;
+}
+
+
+.social-media {
+  display: flex;
+  gap: 10px;
+}
+
+
+ a{
+  text-decoration: none;
+  color: rgb(205, 104, 76);
+  gap: 20px !important;
+  margin: 20px
+} */
+
+
+#CopyrightAndPrivacy, #CopyrightAndPrivacy a, 
+#CopyrightAndPrivacy p {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size:xx-small;
+  padding: none !important;
+  margin: 10px !important;
+
+}
+
+
+/* Add styles for your social media icons here */
+
+/* Define your color scheme */
+
+
+/* a {
+  color: rgb(68, 153, 177);
+} */
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-wrap: wrap;
+    } 
+
+    #LogoAndSocial {
+      flex-wrap: wrap;
+
+    }
+
+    #SitemapAndDetails{
+      flex-wrap: wrap;
+
+    }
+
+    #CopyrightAndPrivacy{
+      flex-wrap: wrap;
+
+    }
+
+  }
