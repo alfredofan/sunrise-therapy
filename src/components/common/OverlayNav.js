@@ -15,6 +15,7 @@ const OverlayNav = ({ isOpen, onClose }) => {
         <a href="#">Services</a>
         <a href="#">Clients</a>
         <a href="#">Contact</a>
+        <a href="#">Book an <br></br>Appointment</a>
       </div>
     </div>
   );

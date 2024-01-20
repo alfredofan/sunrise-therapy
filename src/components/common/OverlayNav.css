@@ -63,13 +63,14 @@ OVERLAY ANIMATION CONFIGURATION
 
   top: 0;
   position: fixed;
-  z-index: -1;
+  z-index: -10;
   background-color: rgba(205, 104, 76, 0.9);
   /* background-color: rgba(68, 153, 177, 0.9); */
 
   overflow-x: hidden;
   overflow-y: hidden;
   opacity: 0;
+  display: none;
 }
 
 
@@ -83,7 +84,7 @@ OVERLAY ANIMATION CONFIGURATION
     height: 100%;
     opacity: 1;
     z-index: 1;
-
+    display:inherit;
   } 
 
 
@@ -105,7 +106,7 @@ OVERLAY ANIMATION CONFIGURATION
   top: 25%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   opacity: 1; /* Set initial opacity to 1 */
   transition: opacity 0.5s; /* Add transition for fade-out effect */
 }

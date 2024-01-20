@@ -6,21 +6,38 @@
   background-color: #fff;
   color: rgb(205, 104, 76);
   padding: 20px;
+  padding-bottom: 0px !important;
   align-items: center;
   font-family: 'Julius Sans One';
-  width: 100%;
-  /* min-height: 70vh; */
 }
 
-/* .footer-section {
-  margin-bottom: 20px;
-} */
+.bold {
+  font-weight: bold;
+}
 
 #LogoAndSocial {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+}
+
+.fa {
+  padding: 5px;
+  padding-top: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: rgba(68, 153, 177);
+}
+
+.fa:hover {
+  color: rgb(205, 104, 76);
+}
+
+.footer-section {
+  padding: 10px;
 
 }
 
@@ -29,72 +46,120 @@
   width: auto !important;
 }
 
-#SitemapAndDetails{
+
+#SitemapAndDetails {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding: 20px;
-
 }
 
-#SitemapAndDetails a{
-  padding: 10px!important;
+#SitemapAndDetails a {
+  padding: 0px !important;
+  /* margin-bottom: 10px; */
+  display: block; /* Added to ensure vertical spacing works */
 }
-
 
 .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons {
   display: flex;
   gap: 10px;
 }
 
+.social-icons img {
+  max-width: 30px;
+  max-height: 30px;
+}
 
- a{
+a {
   text-decoration: none;
   color: rgb(205, 104, 76);
-  gap: 20px !important;
-  margin: 20px
-} */
+}
 
+a:hover {
+  color: rgba(68, 153, 177);
+}
 
-#CopyrightAndPrivacy, #CopyrightAndPrivacy a, 
+#CopyrightAndPrivacy {
+padding-bottom: 10px;
+}
+
+#CopyrightAndPrivacy,
+#CopyrightAndPrivacy a,
 #CopyrightAndPrivacy p {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  font-size:xx-small;
-  padding: none !important;
-  margin: 10px !important;
-
+  font-size: x-small;
+  padding: none;
+  margin: 0px;
 }
 
+#Af img {
+  width: 40px;
+  padding: none;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
 
-/* Add styles for your social media icons here */
+#Af p {
+  margin-top: 0px !important;
+  font-size: xx-small;
+  color: rgba(128, 128, 128);
+}
 
-/* Define your color scheme */
-
-
-/* a {
-  color: rgb(68, 153, 177);
-} */
+#Af:hover {
+  text-decoration: none;
+  opacity: 0.5;
+  
+  }
 
 @media screen and (max-width: 768px) {
   .footer {
     flex-wrap: wrap;
-    } 
+  }
 
-    #LogoAndSocial {
-      flex-wrap: wrap;
-
-    }
-
-    #SitemapAndDetails{
-      flex-wrap: wrap;
-
-    }
-
-    #CopyrightAndPrivacy{
-      flex-wrap: wrap;
-
-    }
+  .footer-section {
+    width: 100vw !important;
+    padding: 10px;
 
   }
+
+  #LogoAndSocial {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    justify-self: center;
+    padding: 5px;
+
+  }
+
+  #SitemapAndDetails {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #CopyrightAndPrivacy {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #CopyrightAndPrivacy p,
+  #CopyrightAndPrivacy a {
+    margin: 0px !important;
+  }
+
+  #CopyrightAndPrivacy p {
+    padding-top: 15px !important;
+  }
+
+  #CopyrightAndPrivacy .footer-section {
+    padding: 2px !important;
+  }
+
+}
+
+
