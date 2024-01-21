@@ -16,9 +16,9 @@ const Footer = () => {
     <footer className="footer">
 
       <div id="LogoAndSocial">
-        <div className="footer-section logo">
-            <img src={Logo} alt="Sunrise Therapy Logo" />
-        </div>
+        <a href="/"className="footer-section" >
+            <img src={Logo} alt="Sunrise Therapy Logo" id="logo"/>
+        </a>
 
         <div className="footer-section social-media">
           {/* <p>Social Media Icons</p> */}

@@ -1,0 +1,35 @@
+/* src/components/contact/ContactInfo.css */
+
+/* Styles for the ContactInfo component */
+
+.contact-info-container {
+  flex: 1;
+  color: rgb(205, 104, 76);
+  line-height: 1.8;
+  /* padding-right: 60px; */
+
+  @media (max-width: 1024px) {
+    padding-right: 0px !important;
+  }
+}
+
+.contact-info-container h2 {
+  line-height: 50px;
+}
+
+.contact-info-container a {
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transition effect for smooth color change */
+  color: rgb(205, 104, 76);
+}
+
+.contact-info-container a.link:hover {
+  color: rgba(68, 153, 177);
+}
+
+.contact-info-container .fa {
+  padding: 5px;
+  margin: 5px 2px;
+}
+
+/* Add additional styles as needed */

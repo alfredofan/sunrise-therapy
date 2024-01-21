@@ -1,14 +1,13 @@
 // src/components/common/Navbar.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import OverlayNav from './OverlayNav';
 import HamburgerMenu from './HamburgerMenu';
 import './Navbar.css'; // CSS file for Navbar styles
 import logoImage from '../../assets/images/Logo500px.png';
 
-
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -18,14 +17,27 @@ const Navbar = () => {
     // Handle appointment click logic here
   };
 
+  const handleScroll = () => {
+    // Add a class when scrolling starts
+    if (window.scrollY > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <div className="navbar">
-      <div className="logo-container">
-        {/* <img src="%PUBLIC_URL%/assets/images/Logo500px.png" alt="Business Logo" /> */}
-        <img src={logoImage} alt="Business Logo" />
-
-      </div>
+    <div className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+      <a href="/" className="logo-container">
+        <img src={logoImage} id="logo" alt="Business Logo" />
+      </a>
       <div className="nav-links">
         <a href="#">About</a>
         <a href="#">Services</a>
@@ -33,11 +45,9 @@ const Navbar = () => {
         <a href="#">Contact</a>
       </div>
 
-
       <div className="appointment-button">
         <button onClick={handleAppointmentClick}>Book an Appointment</button>
       </div>
-
 
       <OverlayNav isOpen={isNavOpen} onClose={() => setIsNavOpen(false)} />
       <HamburgerMenu isOpen={isNavOpen} onToggle={toggleNav} />

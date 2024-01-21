@@ -1,0 +1,113 @@
+ /* src/components/contact/ContactForm.css */ */
+
+/* Styles for the ContactForm component */
+
+
+/* 
+Colour Scheme
+
+Orange:
+  color: rgb(205, 104, 76);
+Blue:
+  color: rgba(68, 153, 177);
+Gray:
+  color: rgba(128, 128, 128);
+
+ */
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
+  width: 90%;
+  color: rgb(205, 104, 76);
+
+
+  @media (min-width: 1024px) {
+    /* width: 45% !important; */
+  }
+}
+
+label {
+  line-height: 35px;
+  color: rgb(205, 104, 76);
+
+}
+
+input {
+  width: 87.5vw;
+  height: 40px;
+  font-size: 1rem;
+  color: rgb(205, 104, 76) ;
+  background-color: #fff !important;
+  border-color: rgba(128, 128, 128)!important;
+  border: 1px solid ;
+  outline: none !important;
+  font-family: 'Julius Sans One';
+
+
+  @media (min-width: 1024px) {
+    width: 37.5vw !important;
+  }
+}
+
+input:focus {
+  border-color: rgba(68, 153, 177) !important;
+  box-shadow: 0 0 5px rgba(68, 153, 177) !important;
+}
+
+textarea {
+  width: 87.5vw;
+  height: 75px;
+  color: rgb(205, 104, 76) ;
+  font-size: 1rem;
+  background-color: #fff !important;
+  border-color: rgba(128, 128, 128)!important;
+  border: 1px solid ;
+  outline: none;
+  font-family: 'Julius Sans One';
+
+  /* width:max-content; */
+
+
+  @media (min-width: 1024px) {
+    width: 37.5vw !important;
+  }
+}
+
+textarea:focus {
+  border-color: rgba(68, 153, 177) !important;
+  box-shadow: 0 0 5px rgba(68, 153, 177) !important;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+}
+
+
+#recaptcha-google{
+  padding: 10px 0px;
+}
+
+#form .appointment-button  {
+  width: 87.5vw;
+  background-color:  rgba(68, 153, 177);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  font-family: 'Julius Sans One';
+
+  @media (min-width: 1024px) {
+    width: 37.5vw !important;
+  }
+}
+
+#form .appointment-button:hover {
+  background-color:rgba(205, 104, 76); /* Change color on hover */
+}
+/* Add additional styles as needed */

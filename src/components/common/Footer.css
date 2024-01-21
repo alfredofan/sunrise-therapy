@@ -21,7 +21,7 @@
   justify-content: space-between;
 }
 
-.fa {
+.social-icons .fa {
   padding: 5px;
   padding-top: 15px;
   font-size: 30px;
@@ -32,7 +32,7 @@
   color: rgba(68, 153, 177);
 }
 
-.fa:hover {
+.social-icons .fa:hover {
   color: rgb(205, 104, 76);
 }
 
@@ -135,6 +135,10 @@ padding-bottom: 10px;
     justify-self: center;
     padding: 5px;
 
+  }
+
+  #LogoAndSocial #logo:hover {
+    opacity: 0.7 !important;  
   }
 
   #SitemapAndDetails {
