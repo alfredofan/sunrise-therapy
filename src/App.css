@@ -26,7 +26,7 @@ body{
  
   }
 
-
+/* text highlight config */
 /* General styling for all browsers */
 ::selection {
   color: rgba(205, 104, 76);
@@ -83,7 +83,7 @@ body{
 }
 
 .font-x-large{
-  font-size: clamp(36px, 6vw, 70px);
+  font-size: clamp(38px, 5.5vw, 70px);
 }
 
 .font-large{
@@ -91,7 +91,7 @@ body{
 }
 
 .font-medium{
-  font-size: clamp(22px, 4.5vw, 33px);
+  font-size: clamp(20px, 3vw, 33px);
 }
 
 .font-small{
@@ -108,3 +108,36 @@ body{
   margin: 0px;
   padding: 0px;
 }
+
+
+
+
+
+/* 
+===============================
+      section separator
+===============================
+*/
+
+/* Custom section separator style */
+.section-divider {
+  position: relative;
+  height: 1px;
+  background-color: #ccc; /* Change the color as per your design */
+  margin: 30px 10vw; /* Adjust the margin as needed */
+}
+
+
+.divider-icon {
+  position: absolute;
+  top: 0px; /* Adjust the positioning as needed */
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background: url('../src/assets/images/Sunrise_therapy_sun.png') center/cover no-repeat;
+  background-color: #fff;
+  color: transparent;
+  width: 15px; /* Set the desired width */
+  height: 15px; /* Set the desired height */
+  background-size: contain; /* Adjust as needed */
+}
+

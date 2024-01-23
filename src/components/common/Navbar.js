@@ -8,9 +8,11 @@ import logoImage from '../../assets/images/Logo500px.png';
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOverlayMenuOpen, setIsOverlayMenuOpen] = useState(false);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
+    setIsOverlayMenuOpen(!isOverlayMenuOpen); // Toggle the overlay menu state
   };
 
   const handleAppointmentClick = () => {
@@ -34,7 +36,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+    <div className={`navbar ${isScrolled && !isOverlayMenuOpen ? 'scrolled' : ''}`}>
       <a href="/" className="logo-container">
         <img src={logoImage} id="logo" alt="Business Logo" />
       </a>

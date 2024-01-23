@@ -63,7 +63,7 @@ OVERLAY ANIMATION CONFIGURATION
 
   top: 0;
   position: fixed;
-  z-index: -10;
+  z-index: 3;
   background-color: rgba(205, 104, 76, 0.9);
   /* background-color: rgba(68, 153, 177, 0.9); */
 
@@ -81,9 +81,9 @@ OVERLAY ANIMATION CONFIGURATION
   */
 
   .overlay.open {
-    height: 100%;
     opacity: 1;
-    z-index: 1;
+    z-index: 2;
+
 
     @media screen and (max-width: 768px) {
       visibility: visible; /* Show the overlay */

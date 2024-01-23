@@ -1,21 +1,44 @@
 /* src/pages/Home.css */
+
+
+/* 
+Colour Scheme
+
+Orange:
+  color: rgb(205, 104, 76);
+Blue:
+  color: rgba(68, 153, 177);
+Gray:
+  color: rgba(128, 128, 128);
+  
+
+Font Style
+font-family: 'Julius Sans One';
+
+ */
+
+
 body{
-background-color: rgb(222, 230, 230);
+/* background-color: rgb(222, 230, 230); */
+background-color: rgb(255, 255, 255);
+font-family: 'Julius Sans One';
+z-index: 0;
 }
 
 
 .home-container {
-  /* display: flex;
+  display: flex; /* Add this line to make it a flex container */
+  flex-direction: column; /* Set the direction to column so items stack vertically */
   justify-content: center;
-  align-content: center; */
-    max-width: 800px;
-    margin-top: 104px;
-    padding: 20px;
-    text-align: center;
-    height: 100vh;
+  align-items: center;
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto; /* Add this line to horizontally center the container */
+}
 
-    
-  }
+
+
   
   /* Add more styles as needed */
   

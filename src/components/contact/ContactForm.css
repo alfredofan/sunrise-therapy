@@ -41,7 +41,7 @@ input {
   font-size: 1rem;
   color: rgb(205, 104, 76) ;
   background-color: #fff !important;
-  border-color: rgba(128, 128, 128)!important;
+  border-color: #ccc!important;
   border: 1px solid ;
   outline: none !important;
   font-family: 'Julius Sans One';
@@ -63,7 +63,7 @@ textarea {
   color: rgb(205, 104, 76) ;
   font-size: 1rem;
   background-color: #fff !important;
-  border-color: rgba(128, 128, 128)!important;
+  border-color: #ccc!important;
   border: 1px solid ;
   outline: none;
   font-family: 'Julius Sans One';
