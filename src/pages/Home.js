@@ -29,7 +29,6 @@ const Home = () => {
           </div>
 
       <div className="home-container">
-
         <h1 className='font-x-large'>About</h1><br />
         <p className='font-medium'>        
           lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor 

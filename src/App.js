@@ -9,11 +9,18 @@ import './App.css';
 
 function App() {
   return (
+
+    // full width
     <div className="App">
       <Navbar />
+
+    {/* // 2560px width */}
+      <div className='cotainer-max-width'>
+
       <Home />
       <Contact />
       <Footer />
+    </div>
     </div>
   );
 }

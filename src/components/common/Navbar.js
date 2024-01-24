@@ -37,12 +37,13 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${isScrolled && !isOverlayMenuOpen ? 'scrolled' : ''}`}>
+      
       <a href="/" className="logo-container">
         <img src={logoImage} id="logo" alt="Business Logo" />
       </a>
       <div className="nav-links">
         <a href="#">About</a>
-        <a href="#">Services</a>
+        <a href="#services">Services</a>
         <a href="#">Clients</a>
         <a href="#">Contact</a>
       </div>

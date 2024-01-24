@@ -1,14 +1,24 @@
 /* src/components/common/Footer.css */
+
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  
+}
+
 .footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #fff;
   color: rgb(205, 104, 76);
   padding: 20px;
   padding-bottom: 0px !important;
   align-items: center;
-  font-family: 'Julius Sans One';
+  font-family: 'Julius Sans One';  
+  width: 100%;
 }
 
 .bold {
