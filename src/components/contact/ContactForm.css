@@ -16,11 +16,10 @@ Gray:
  */
 
 
-form {
+ form {
   display: flex;
   flex-direction: column;
   row-gap: 0.8rem;
-  width: 90%;
   color: rgb(205, 104, 76);
 
 
@@ -36,7 +35,7 @@ label {
 }
 
 input {
-  width: 87.5vw;
+  width: 90vw;
   height: 40px;
   font-size: 1rem;
   color: rgb(205, 104, 76) ;
@@ -59,7 +58,7 @@ input:focus {
 }
 
 textarea {
-  width: 87.5vw;
+  width: 90vw;
   height: 75px;
   color: rgb(205, 104, 76) ;
   font-size: 1rem;
@@ -96,7 +95,7 @@ textarea:focus {
 }
 
 #form .appointment-button  {
-  width: 87.5vw;
+  width: 90vw;
   background-color:  rgba(68, 153, 177);
   color: #fff;
   padding: 10px 20px;

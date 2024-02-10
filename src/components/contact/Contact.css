@@ -14,7 +14,7 @@ Gray:
   
  */
 
-#contact {
+ #contact {
   position:inherit;
   display: flex;
   width: 100%;
@@ -47,7 +47,7 @@ Gray:
 /* Additional styles for Contact section */
 
 #contact-container {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -67,7 +67,7 @@ Gray:
 
   @media (max-width: 1024px) {
     justify-content:center !important; /* Change back to flex-start on smaller screens */
-    min-width: 100%;
+    min-width: 100% !important;
     margin: 30px 0;
   }
 }
@@ -79,7 +79,7 @@ Gray:
   max-width: 1050px;
 
   @media (max-width: 1024px) {
-    min-width: 100%;
+    min-width: 100% !important;
 
   }
 }

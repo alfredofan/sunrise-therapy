@@ -70,10 +70,10 @@ const Footer = () => {
       <div id="SitemapAndDetails">
         <div className="footer-section sitemap">
           <p className="bold">Sitemap</p> 
-          <a href="#">About</a> <br />
-          <a href="#">Services</a> <br />
-          <a href="#">Clients</a> <br />
-          <a href="#">Contact</a> <br /> 
+          <a href="#about">About</a> <br />
+          <a href="#services">Services</a> <br />
+          <a href="#clients">Clients</a> <br />
+          <a href="#contact">Contact</a> <br />
         </div>
 
 

@@ -42,10 +42,10 @@ const Navbar = () => {
         <img src={logoImage} id="logo" alt="Business Logo" />
       </a>
       <div className="nav-links">
-        <a href="#">About</a>
+        <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
       </div>
 
       <div className="appointment-button">

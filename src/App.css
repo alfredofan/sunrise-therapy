@@ -11,7 +11,7 @@ Gray:
 
  */
 
-.App {
+ .App {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -27,6 +27,8 @@ Gray:
 body{
   max-width: 100%;
   overflow-x: hidden;
+  font-family: 'Julius Sans One';
+
 
   
  
@@ -72,14 +74,22 @@ body{
 */
 
 .cotainer-max-width{
-  max-width: 2560px !important;
+  max-width: 2560px;
+
+  @media (max-width: 2560px) {
+    max-width: 100% !important;
+
+  }
 
 }
 
 .cotainer-1920-width{
   max-width: 1920px !important;
-  /* display: inherit;
-  justify-content: inherit; */
+
+  @media (max-width: 1920px) {
+    max-width: 100% !important;
+
+  }
 
 }
 
