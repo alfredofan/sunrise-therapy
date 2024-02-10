@@ -4,6 +4,7 @@ import ScrollingNavLink from './ScrollingNavLink';
 
 const OverlayNav = ({ isOpen, onClose }) => {
   const overlayRef = useRef(null);
+  
 
   useEffect(() => {
     const handleKeyDown = (event) => {

@@ -37,13 +37,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`navbar ${isScrolled && !isOverlayMenuOpen ? 'scrolled' : ''}`}>
+    <div className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       
       <a href="/" className="logo-container">
         <img src={logoImage} id="logo" alt="Business Logo" />
       </a>
       <div className="nav-links">
-        {/* Using ScrollingNavLink component instead of regular anchor tags to land 150px below the section start*/}
+        {/* Using ScrollingNavLink component instead of regular anchor tags to land 150px below the section*/}
         <ScrollingNavLink href="#about">About</ScrollingNavLink>
         <ScrollingNavLink href="#services">Services</ScrollingNavLink>
         <ScrollingNavLink href="#clients">Clients</ScrollingNavLink>
