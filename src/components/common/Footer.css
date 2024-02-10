@@ -65,7 +65,7 @@
 
 #SitemapAndDetails a {
   padding: 0px !important;
-  /* margin-bottom: 10px; */
+  margin-bottom: 10px;
   display: block; /* Added to ensure vertical spacing works */
 }
 

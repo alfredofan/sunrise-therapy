@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './OverlayNav.css';
+import ScrollingNavLink from './ScrollingNavLink'; 
 
 const OverlayNav = ({ isOpen, onClose }) => {
   const overlayRef = useRef(null);
@@ -35,10 +36,10 @@ const OverlayNav = ({ isOpen, onClose }) => {
   return (
     <div className={overlayClass} ref={overlayRef} tabIndex={isOpen ? 0 : -1} onClick={onClose}>
       <div className="overlay-content">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#clients">Clients</a>
-        <a href="#contact">Contact</a>
+        <ScrollingNavLink href="#about">About</ScrollingNavLink>
+        <ScrollingNavLink href="#services">Services</ScrollingNavLink>
+        <ScrollingNavLink href="#clients">Clients</ScrollingNavLink>
+        <ScrollingNavLink href="#contact">Contact</ScrollingNavLink>
         <a href="#">Book an <br></br>Appointment</a>
       </div>
     </div>

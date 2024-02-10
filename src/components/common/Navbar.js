@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import OverlayNav from './OverlayNav';
 import HamburgerMenu from './HamburgerMenu';
+import ScrollingNavLink from './ScrollingNavLink'; // Import the new component
 import './Navbar.css'; // CSS file for Navbar styles
 import logoImage from '../../assets/images/Logo500px.png';
 
@@ -42,10 +43,11 @@ const Navbar = () => {
         <img src={logoImage} id="logo" alt="Business Logo" />
       </a>
       <div className="nav-links">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#clients">Clients</a>
-        <a href="#contact">Contact</a>
+        {/* Using ScrollingNavLink component instead of regular anchor tags to land 150px below the section start*/}
+        <ScrollingNavLink href="#about">About</ScrollingNavLink>
+        <ScrollingNavLink href="#services">Services</ScrollingNavLink>
+        <ScrollingNavLink href="#clients">Clients</ScrollingNavLink>
+        <ScrollingNavLink href="#contact">Contact</ScrollingNavLink>
       </div>
 
       <div className="appointment-button">

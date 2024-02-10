@@ -2,6 +2,8 @@
 import React from 'react';
 import Logo from '../../assets/images/Logo500px.png';
 import AfLogo from '../../assets/images/personal_logo_gray.png';
+import ScrollingNavLink from './ScrollingNavLink'; 
+
 
 
 // import LinkedInIcon from '../../assets/images/SocialMedia/linkedin-clear.png';
@@ -70,10 +72,10 @@ const Footer = () => {
       <div id="SitemapAndDetails">
         <div className="footer-section sitemap">
           <p className="bold">Sitemap</p> 
-          <a href="#about">About</a> <br />
-          <a href="#services">Services</a> <br />
-          <a href="#clients">Clients</a> <br />
-          <a href="#contact">Contact</a> <br />
+          <ScrollingNavLink href="#about">About</ScrollingNavLink>
+          <ScrollingNavLink href="#services">Services</ScrollingNavLink>
+          <ScrollingNavLink href="#clients">Clients</ScrollingNavLink>
+          <ScrollingNavLink href="#contact">Contact</ScrollingNavLink>
         </div>
 
 
