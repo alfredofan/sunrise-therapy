@@ -6,6 +6,7 @@ import Footer from '../components/common/Footer'; // Import your Footer componen
 import Services from '../components/services/Services';
 
 import './Home.css';
+import About from '../components/about/About';
 
 // import Header from '../components/common/Header';
 
@@ -22,6 +23,13 @@ const Home = () => {
           </div>
 
           <Services />
+
+          {/* Custom section separator */}
+          <div class="section-divider">
+            <span class="divider-icon">•</span>
+          </div>
+
+          <About />
 
           {/* Custom section separator */}
           <div class="section-divider">
