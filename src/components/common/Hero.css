@@ -82,6 +82,8 @@ font-family: 'Julius Sans One';
   border: none;
   cursor: pointer;
   font-family: 'Julius Sans One';
+  transition: background-color 0.3s;
+
 
 }
 
