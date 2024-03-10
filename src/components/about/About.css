@@ -22,6 +22,9 @@ font-family: 'Julius Sans One';
   align-items: center; /* Align content center horizontally */
   justify-content: center !important;  
   color: rgba(128, 128, 128);
+  padding : 5% 0;
+  font-weight:bold ; /* Make the text bold */
+
   /* width: 90%; */
 }
 
@@ -32,20 +35,18 @@ font-family: 'Julius Sans One';
   align-items: center;
   width: 90%;
   text-align: left;
+  padding-top: 2.5%;
   
   /* Limiting maximum width for better readability */
   margin-bottom: 20px; /* Add some space between subsections */
 
   @media screen and (max-width: 768px) {
-    width: 90%;
+    padding-top: 5%;
   }
 }
 
 .text{
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center !important;  
-  align-items: center; */
+
   max-width: 1150px;
 
 }
@@ -71,7 +72,10 @@ font-family: 'Julius Sans One';
 }
 
 .bio-item h2{
-  
+  font-weight:bold ; /* Make the text bold */
+
+
+
   @media screen and (max-width: 768px) {
     text-align: center;
 
@@ -135,6 +139,7 @@ font-family: 'Julius Sans One';
   @media screen and (max-width: 768px) {
     width: 100%;
     padding : 0px;
+ 
   }
 }
 

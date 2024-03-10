@@ -28,11 +28,13 @@ const About = () => {
   }, []);
   return (
     <section id="about">
+        
         <h2 className='font-x-large'>About</h2>
+        
         <div className="subsection">
         <div className="text">
 
-            <h2>Who We Are</h2>
+            <h2  className='font-medium-large'>Who We Are</h2>
             <p>
                 Established in 2022, Sunrise Therapy was born with a mission—to bring 
                 positive change to the lives of individuals with disabilities. Our  
@@ -47,7 +49,7 @@ const About = () => {
         <div className="subsection">
         <div className="text">
 
-            <h2>What We Do</h2>
+            <h2 className='font-medium-large'>What We Do</h2>
             <p>
                 At Sunrise Therapy, we specialize in providing community based allied 
                 health services for individuals with disabilities on the Northern Beaches 
@@ -56,11 +58,12 @@ const About = () => {
                 participants to achieve optimal outcomes.
             </p>
             <p>
-                Our mission is clear — deliver high'quality care that empowers 
+                Our mission is clear — deliver high quality care that empowers 
                 participants to reach their full potential.
             </p>
         </div>
         </div>
+
 
 
         <div className="subsection">
@@ -72,19 +75,19 @@ const About = () => {
                 </div>
                 
                 <div className="bio-text">
-                <h2>Rachel</h2>
+                <h2  className='font-medium-large'>Rachel</h2>
                 <p>
                 As a dedicated Occupational Therapist, I earned my Bachelor of Occupational 
                 Therapy from the Australian Catholic University. My journey in the disability 
                 sector began as a disability support worker, before evolving into an OT and 
                 then Supervising Occupational Therapist and later a Multidisciplinary Team 
-                Leader. Taking the leap, l founded Sunrise Therapy, driven by my commitment 
+                Leader. Taking the leap, I founded Sunrise Therapy, driven by my commitment 
                 to quality care and making a positive impact in participants' lives. My 
                 experience spans pediatrics, adolescents, and adults, specializing in 
                 functional assessments and capacity-building therapy across various daily 
                 living activities. I have a keen interest in working with neurodivergent
                 individuals, specifically those with Autism Spectrum Disorder and ADHD, 
-                utilizing sensory interventions and capacity-building . At the core of my 
+                utilizing sensory interventions and capacity-building. At the core of my 
                 approach is collaborative goal-setting. I am passionate about working with 
                 motivated individuals ready to make positive changes in their lives to achieve 
                 their goals. My commitment extends to working closely with participants, their 
@@ -102,7 +105,7 @@ const About = () => {
                 </div>
 
                 <div className="bio-text">
-                <h2>Brie</h2>
+                <h2 className='font-medium-large'>Brie</h2>
                 <p>
                 Meet Brie, our dedicated virtual administrator at Sunrise Therapy. With over a
                 decade of experience in the public health field, Brie specializes in providing 
@@ -126,7 +129,7 @@ const About = () => {
 
 
                 <div className="bio-text">
-                <h2>Juliette</h2>
+                <h2 className='font-medium-large'>Juliette</h2>
                 <p>
                 Meet Juliette, our accomplished Mental Health Occupational Therapist at Sunrise 
                 Therapy. With over 5 years of expertise in mental health and accreditation, 

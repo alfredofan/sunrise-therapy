@@ -113,6 +113,10 @@ body{
   font-size: clamp(28px, 4.5vw, 55px);
 }
 
+.font-medium-large{
+  font-size: clamp(28px, 3.5vw, 33px);
+}
+
 .font-medium{
   font-size: clamp(20px, 3vw, 33px);
 }

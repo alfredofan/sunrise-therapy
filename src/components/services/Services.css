@@ -21,6 +21,8 @@ font-family: 'Julius Sans One';
 .services-section {
   /* padding: 40px; */
   text-align: center;
+  padding : 5%;
+
 }
 
 .service-cards-container {
