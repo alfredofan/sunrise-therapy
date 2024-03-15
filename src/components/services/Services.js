@@ -8,38 +8,43 @@ import './Services.css'; // CSS file for Service styles
 const servicesData = [
   // Define services data here
   {
-    name: 'Functional Assessments',
-    description: 'Conducting thorough functional assessments to identify support needs and assess functional capacity.',
+    name: 'NDIS Functional Capacity Assessment (FCA)',
+    description: 'Conducting thorough OT assessment of your support needs to write your NDIS report.',
   },
 
   {
-    name: 'Daily Living Skills Intervention',
-    description: 'Assisting in the development of increased participation and independence in daily living tasks.',
+    name: 'OT Therapy',
+    description: 'We always aim to increase quality of life through goal focused and individualised intervention.',
   },
 
   {
-    name: 'Sensory and Interoception Assessment and Intervention',
-    description: 'Providing assessment and intervention for sensory needs impacting functional tasks.',
+    name: 'Sensory Assessment and Intervention',
+    description: 'Addressing sensory needs impacting daily tasks through comprehensive assessment and targeted interventions.',
   },  
   
   {
-    name: 'SIL and SDA assessments',
-    description: 'We conduct thorough assessments to evaluate housing support needs, ensuring eligibility for NDIS funding.',
+    name: 'NDIS Home and Living Reports',
+    description: 'Detailed assessments and reports for supported independent living (SIL) and Specialist Disability Accommodation (SDA).',
   },
 
   {
-    name: 'Mental health assessment and intervention',
-    description: 'Benefit from specialized expertise in mental health assessments and interventions with our dedicated therapist.',
+    name: 'Mental Health Assessment and Intervention',
+    description: 'Specialized expertise, holistic therapies, and individualised interventions by our dedicated occupational therapist.',
   },
 
   {
-    name: 'Assistive Technology',
-    description: 'Guiding on tailored equipment options to meet diverse needs and support goals.',
+    name: 'Explore Assistive Technology (AT)',
+    description: 'We assess your unique needs and guide you through the NDIS application.',
   },
 
   {
-    name: 'Access Reports for the NDIS',
-    description: 'Dedicated to assisting with your NDIS application and journey, we provide comprehensive reports to strengthen your submission.',
+    name: 'Access NDIS reports',
+    description: 'Applying for NDIS? Let us support your application with a comprehensive functional report to advocate for you!',
+  },
+
+  {
+    name: 'Nature Therapy',
+    description: 'Discover well-being through nature-based therapies tailored to your individual goals and needs.',
   },
 ];
 

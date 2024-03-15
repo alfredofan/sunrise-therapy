@@ -37,7 +37,7 @@ const About = () => {
             <h2  className='font-medium-large'>Who We Are</h2>
             <p>
                 Established in 2022, Sunrise Therapy was born with a mission—to bring 
-                positive change to the lives of individuals with disabilities. Our  
+                positive change to the lives of individuals living with disabilities. Our  
                 commitment is to provide exceptional care that revolves around 
                 the participant and has them involved every step of the way, inspired 
                 by Rachel's love of Sunrise and the belief that each day presents an 

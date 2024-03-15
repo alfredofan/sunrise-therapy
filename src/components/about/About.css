@@ -127,7 +127,7 @@ font-family: 'Julius Sans One';
 }
 
 .bio-img:hover img {
-  transform: scale(1.15); /* Zoom effect on hover */
+  transform: scale(1.1); /* Zoom effect on hover */
 }
 
 .bio-text {

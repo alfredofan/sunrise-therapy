@@ -7,7 +7,7 @@ const ServiceCard = ({ name, description }) => {
     <div className="service-card">
       <h3>{name}</h3>
       <p>{description}</p>
-      <button>Read More</button>
+      <button>Learn More</button>
     </div>
   );
 };

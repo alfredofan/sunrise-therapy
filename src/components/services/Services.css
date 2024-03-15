@@ -33,6 +33,10 @@ font-family: 'Julius Sans One';
 }
 
 .service-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
   width: 300px;
   padding: 20px;
   margin: 10px;
@@ -54,6 +58,11 @@ font-family: 'Julius Sans One';
 }
 
 .service-card button {
+  margin-top: auto; /* This will push the button to the bottom */ 
+  margin-left: auto; /* Center the button horizontally */
+  margin-right: auto; /* Center the button horizontally */
+  /* don't add bottom margin */
+  width: fit-content;
   background-color: rgba(68, 153, 177);
   color: #fff;
   padding: 8px 16px;
