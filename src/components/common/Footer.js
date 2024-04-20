@@ -29,39 +29,34 @@ const Footer = () => {
             {/* <p>Social Media Icons</p> */}
             <div className="social-icons">
 
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              {/* <a href="#" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-linkedin" ariaHidden="true"></i>
-                {/* <img src={LinkedInIcon} alt="LinkedIn" /> */}
               </a>
 
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-instagram" ariaHidden="true"></i>
-                {/* <img src={InstagramIcon} alt="Instagram" /> */}
               </a>
 
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-facebook" ariaHidden="true"></i>
-                {/* <img src={FacebookIcon} alt="Facebook" /> */}
               </a>
 
               <a href="#" target="_blank" rel="noopener noreferrer">
               <i className="fa fa-youtube-play" ariaHidden="true"></i>
-                {/* <img src={YouTubeIcon} alt="YouTube" /> */}
               </a>
 
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-whatsapp" ariaHidden="true"></i>
-                {/* <img src={WhatsAppIcon} alt="WhatsApp" /> */}
-              </a>
+              </a> */}
 
               
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="mailto:rachel@sunrisetherapy.com.au" target="_blank" rel="noopener noreferrer">
               <i className="fa fa-envelope" ariaHidden="true"></i>
                 {/* <img src={YouTubeIcon} alt="YouTube" /> */}
               </a>
 
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i className="fa fa-phone" ariaHidden="true"></i>
+              <a href="tel:0424739331">
+              <i className="fa fa-phone" aria-hidden="true"></i>
                 {/* <img src={WhatsAppIcon} alt="WhatsApp" /> */}
               </a>
             </div>

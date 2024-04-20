@@ -25,7 +25,7 @@ const ContactInfo = () => {
           rachel@sunrisetherapy.com.au
       </a><br />
 
-      <a className="font-small link" title="Call me">
+      <a href="tel:0424739331" className="font-small link" title="Call me">
         <i className="fa fa-phone font-small" ariaHidden="true"></i>
           0423 549 767
       </a>
