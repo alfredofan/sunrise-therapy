@@ -22,7 +22,7 @@ Gray:
   align-items: center;
   background-color: white;
   ; /* Changed background color to gray #818181 */
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
   padding-bottom: 7rem;
   font-family: 'Julius Sans One';
   font-size: 1rem;
@@ -47,7 +47,7 @@ Gray:
 /* Additional styles for Contact section */
 
 #contact-container {
-  width: 95%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -56,6 +56,7 @@ Gray:
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 #contact-right {
@@ -75,11 +76,27 @@ Gray:
 #contact-left {
   flex: 1;
   min-width: 450px;
-  justify-content: flex-start !important; /* Change back */
+  justify-content: flex-start ; /* Change back */
   max-width: 1050px;
 
   @media (max-width: 1024px) {
     min-width: 100% !important;
+    
 
   }
 }
+
+#contact-left {
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center !important; /* Change back */
+    max-width: 100% !important;
+    min-width: 50% !important;
+
+
+  }
+}
+
+
+

@@ -1,6 +1,8 @@
 // src/components/common/Hero.js
 import React from 'react';
 import './Hero.css';
+import { Link } from 'react-router-dom';
+
 
 const Hero = () => {
   return (
@@ -13,11 +15,12 @@ const Hero = () => {
         <p className="hero-subheadline font-medium"> 
           in Sydney&#39;s Northern Beaches and North Shore
         </p>
-        <button className="hero-button">
-          Get Started
+        <button className="hero-button" >
+        <Link to="/#services-section" >Get Started</Link>
         </button>
       </div>
-    </div>
+
+    </div >
   );
 };
 

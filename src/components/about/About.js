@@ -2,8 +2,8 @@
 import React, { useEffect } from 'react';
 import './About.css';
 import Rachel from '../../assets/images/rachel1.1-no-bg.png';
-import Brie from '../../assets/images/brie_square2-no-bg.png';
-import Juliette from '../../assets/images/rachel1.1-no-bg.png';
+import Brie from '../../assets/images/brie_square-no-bg.png';
+import Juliette from '../../assets/images/Juliette_no_bg1.3.png';
 
 
 
@@ -31,7 +31,7 @@ const About = () => {
         
         <h2 className='font-x-large'>About</h2>
         
-        <div className="subsection">
+        <div className="subsection-grey-box">
         <div className="text">
 
             <h2  className='font-medium-large'>Who We Are</h2>
@@ -44,9 +44,9 @@ const About = () => {
                 opportunity for growth.
             </p>
         </div>
-        </div>
+        {/* </div> */}
 
-        <div className="subsection">
+        {/* <div className="subsection-grey-box"> */}
         <div className="text">
 
             <h2 className='font-medium-large'>What We Do</h2>
@@ -132,7 +132,24 @@ const About = () => {
                 <h2 className='font-medium-large'>Juliette</h2>
                 <p>
                 Meet Juliette, our accomplished Mental Health Occupational Therapist at Sunrise 
-                Therapy. With over 5 years of expertise in mental health and accreditation, 
+                Therapy. <br></br><br></br>
+                "With over seven years of experience in the field, I have dedicated myself 
+                to service the community through the National Disability Insurance Scheme (NDIS), 
+                working with individuals across a broad spectrum of diagnoses including those aged 
+                12 and above."
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                 {/* With over seven years of expertise in mental health and accreditation, 
                 Juliette brings a wealth of experience to our team. Holding leadership 
                 experience, she specializes in various assessments, including Functional, 
                 SIL/SDA, Sensory, and AT assessments. Notably, Juliette can conduct assessments 
@@ -141,7 +158,7 @@ const About = () => {
                 significantly to our commitment to providing top-notch mental health assessments 
                 and interventions. Juliette is an invaluable member of our team, embodying the 
                 values of Sunrise Therapy and enhancing the quality of care we offer to our 
-                participants.
+                participants. */}
                 </p>
                 </div>
             </div>

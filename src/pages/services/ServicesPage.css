@@ -1,0 +1,167 @@
+/* src/pages/services/ServicesPage.css */
+
+
+/* 
+Colour Scheme
+
+Orange:
+  color: rgb(205, 104, 76);
+Blue:
+  color: rgba(68, 153, 177);
+Gray:
+  color: rgba(128, 128, 128);
+  
+
+Font Style
+font-family: 'Julius Sans One';
+
+ */
+
+ 
+ .services-container {
+  position: inherit;
+
+  margin-top: calc(100px + 10vh)!important;
+  /* max-width: 1200px; */
+  margin: auto;
+  padding: 20px;
+  color: rgba(128, 128, 128);
+
+}
+
+
+.services-headline {
+  font-size: 4rem;
+  margin-bottom: 1rem  !important;
+  font-weight: bold;
+  text-shadow: 1px 0 rgba(128, 128, 128);
+  
+  @media screen and (max-width: 768px) {
+    margin-bottom: 5rem  !important;
+
+  }
+
+}
+
+.reverse{
+  flex-direction: row-reverse; /* reverse order of text and img */
+}
+
+.service-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 125px;
+
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+
+
+  }
+}
+
+.service-display.image-right {
+ 
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse; /* Stack items vertically on smaller screens */
+  }
+}
+
+
+.service-display.image-left .service-image {
+  order: 1;
+}
+
+.service-display.image-left .service-details {
+  order: 2;
+}
+
+.service-display.image-right .service-image {
+  order: 2;
+}
+
+.service-display.image-right .service-details {
+  order: 1;
+}
+
+.service-image {
+  width: 40%;
+  padding: 0 20px;
+ 
+  @media screen and (max-width: 768px) {
+    width: 85%; /* Stack items vertically on smaller screens */
+    margin-top: 125px;
+
+    /* padding: 0; */
+    
+  }
+}
+
+
+.service-image img {
+  width: auto;
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  max-height: 500px; /* Adjust maximum height as needed */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 8px; /* Add border radius for a rounded look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  transition: transform 0.3s ease; /* Add a transition for smooth hover effect */
+}
+
+.service-image img:hover {
+  transform: scale(1.05); /* Scale up the image slightly on hover */
+}
+
+.service-details {
+  width: 40%;
+  /* max-width: 600px; */
+  padding: 30vh 20px;
+  flex-direction: column;
+  position: relative; /* Ensure position is relative for absolute positioning */
+  text-align: left; /* Align text content to the left by default */
+
+  @media screen and (max-width: 768px) {
+    width: 85%;
+    padding: 5%;
+    text-align: center; /* Center-align text on smaller screens */
+  }
+}
+
+
+.service-details h2 {
+  text-align: left;
+  text-shadow: 1px 0 rgba(128, 128, 128);
+
+
+}
+
+.service-details p {
+  margin-top: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+
+ .service-details button {
+  background-color: rgba(68, 153, 177);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Julius Sans One';
+  transition: background-color 0.3s;
+  width: 100%; /* Ensure button spans full width of container */
+  max-width: 300px; /* Limit maximum width to prevent stretching */
+}
+
+/* Override any conflicting styles at smaller screen sizes */
+@media screen and (max-width: 768px) {
+  .service-details button {
+    margin-top: 20px; /* Adjust margin for smaller screens */
+  }
+}
+.service-details button:hover {
+  background-color:rgba(205, 104, 76); /* Change color on hover */
+}

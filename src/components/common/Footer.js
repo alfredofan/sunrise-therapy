@@ -2,7 +2,7 @@
 import React from 'react';
 import Logo from '../../assets/images/Logo500px.png';
 import AfLogo from '../../assets/images/personal_logo_gray.png';
-import ScrollingNavLink from './ScrollingNavLink'; 
+import ScrollingNavLink from './OffsetNavLink.js'; 
 
 
 

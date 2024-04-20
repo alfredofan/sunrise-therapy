@@ -21,7 +21,7 @@ font-family: 'Julius Sans One';
 .services-section {
   /* padding: 40px; */
   text-align: center;
-  padding : 5%;
+  /* padding : 0 5%; */
 
 }
 
@@ -37,6 +37,8 @@ font-family: 'Julius Sans One';
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
   width: 300px;
   padding: 20px;
   margin: 10px;
@@ -57,7 +59,7 @@ font-family: 'Julius Sans One';
 
 }
 
-.service-card button {
+.service-card button, .see-all-button {
   margin-top: auto; /* This will push the button to the bottom */ 
   margin-left: auto; /* Center the button horizontally */
   margin-right: auto; /* Center the button horizontally */
@@ -71,9 +73,52 @@ font-family: 'Julius Sans One';
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-family: 'Julius Sans One';
-
 }
 
 .service-card button:hover {
   background-color: rgb(205, 104, 76);
 }
+
+
+
+
+
+
+.ot-services {
+  padding: 40px;
+  text-align: center;
+  background-color: #f8f8f8;
+  /* border-radius: 8px; */
+  margin-top: 50px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.ot-services h3 {
+  color: rgba(68, 153, 177);
+  font-size: 24px;
+}
+
+.ot-services p {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* .see-all-button {
+  background-color: rgba(68, 153, 177);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+} */
+
+.see-all-button:hover {
+  background-color: rgb(205, 104, 76);
+
+ 
+}
+
+
+

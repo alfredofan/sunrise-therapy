@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import './OverlayNav.css';
-import ScrollingNavLink from './ScrollingNavLink'; 
+import OffsetNavLink from './OffsetNavLink.js'; 
+import { Link } from 'react-router-dom';
+
 
 const OverlayNav = ({ isOpen, onClose }) => {
   const overlayRef = useRef(null);
@@ -37,11 +39,12 @@ const OverlayNav = ({ isOpen, onClose }) => {
   return (
     <div className={overlayClass} ref={overlayRef} tabIndex={isOpen ? 0 : -1} onClick={onClose}>
       <div className="overlay-content">
-        <ScrollingNavLink href="#about">About</ScrollingNavLink>
-        <ScrollingNavLink href="#services">Services</ScrollingNavLink>
-        <ScrollingNavLink href="#clients">Clients</ScrollingNavLink>
-        <ScrollingNavLink href="#contact">Contact</ScrollingNavLink>
-        <a href="#">Book an <br></br>Appointment</a>
+        {/* Using ScrollingNavLink component instead of regular anchor tags to land 150px below the section*/}
+        <Link to="/#about-section" >About</Link>
+        <Link to="/#services-section" >Services</Link>
+        {/* <ScrollingNavLink to="/#clients">Clients</ScrollingNavLink> */}
+        <Link to="#contact-section">Contact</Link>
+        <Link to="#contact-section">Book an <br></br>Appointment</Link>
       </div>
     </div>
   );

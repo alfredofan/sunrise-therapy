@@ -2,9 +2,11 @@
 import React, { useState, useEffect } from 'react';
 import OverlayNav from './OverlayNav';
 import HamburgerMenu from './HamburgerMenu';
-import ScrollingNavLink from './ScrollingNavLink'; // Import the new component
+import OffsetNavLink from './OffsetNavLink'; // Import the new component
 import './Navbar.css'; // CSS file for Navbar styles
 import logoImage from '../../assets/images/Logo500px.png';
+import { Link } from 'react-router-dom';
+
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -17,8 +19,9 @@ const Navbar = () => {
   };
 
   const handleAppointmentClick = () => {
-    // Handle appointment click logic here
+    // window.location.href = '#contact';
   };
+
 
   const handleScroll = () => {
     // Add a class when scrolling starts
@@ -44,14 +47,15 @@ const Navbar = () => {
       </a>
       <div className="nav-links">
         {/* Using ScrollingNavLink component instead of regular anchor tags to land 150px below the section*/}
-        <ScrollingNavLink href="#about">About</ScrollingNavLink>
-        <ScrollingNavLink href="#services">Services</ScrollingNavLink>
-        <ScrollingNavLink href="#clients">Clients</ScrollingNavLink>
-        <ScrollingNavLink href="#contact">Contact</ScrollingNavLink>
+        <Link to="/#about-section" >About</Link>
+        <Link to="/#services-section" >Services</Link>
+        {/* <ScrollingNavLink to="/#clients">Clients</ScrollingNavLink> */}
+        <Link to="#contact-section">Contact</Link>
+   
       </div>
 
       <div className="appointment-button">
-        <button onClick={handleAppointmentClick}>Book an Appointment</button>
+      <Link to="#contact-section"><button onClick={handleAppointmentClick}>Book an Appointment</button></Link>
       </div>
 
       <OverlayNav isOpen={isNavOpen} onClose={() => setIsNavOpen(false)} />
