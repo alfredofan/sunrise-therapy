@@ -64,14 +64,20 @@ Gray:
   display: flex;
   justify-content: flex-end; /* Changed to flex-end to push content to the right */
   min-width: 450px;
-
-
-  @media (max-width: 1024px) {
-    justify-content:center !important; /* Change back to flex-start on smaller screens */
-    min-width: 100% !important;
-    margin: 30px 0;
-  }
+ 
 }
+
+
+@media (max-width: 1024px) {
+  #contact-right {
+
+  justify-content:center !important; /* Change back to flex-start on smaller screens */
+  min-width: 100% !important;
+  margin: 30px 0;
+}
+
+}
+
 
 #contact-left {
   flex: 1;
@@ -79,16 +85,19 @@ Gray:
   justify-content: flex-start ; /* Change back */
   max-width: 1050px;
 
-  @media (max-width: 1024px) {
-    min-width: 100% !important;
-    
-
-  }
 }
 
-#contact-left {
+
+@media (max-width: 1024px) {
+  #contact-left {
+
+  min-width: 100% !important;
+}
+
+}
 
   @media (max-width: 768px) {
+    #contact-left {
     display: flex;
     justify-content: center !important; /* Change back */
     max-width: 100% !important;

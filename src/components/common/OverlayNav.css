@@ -84,12 +84,14 @@ OVERLAY ANIMATION CONFIGURATION
     opacity: 1;
     z-index: 999;
     height: 100vh;
+ } 
 
+ @media screen and (max-width: 768px) {
+  .overlay.open {
 
-    @media screen and (max-width: 768px) {
-      visibility: visible; /* Show the overlay */
-    }
-  } 
+  visibility: visible; /* Show the overlay */
+  }
+}
 
 
   /* 

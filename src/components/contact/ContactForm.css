@@ -1,4 +1,4 @@
- /* src/components/contact/ContactForm.css */ */
+/* src/components/contact/ContactForm.css */
 
 /* Styles for the ContactForm component */
 
@@ -21,11 +21,14 @@ Gray:
   flex-direction: column;
   row-gap: 0.8rem;
   color: rgb(205, 104, 76);
+}
 
 
-  @media (min-width: 1024px) {
-    /* width: 45vw !important; */
-  }
+
+@media (min-width: 1024px) {
+  form {
+  /* width: 45vw !important; */
+}
 }
 
 label {
@@ -45,12 +48,16 @@ input {
   outline: none !important;
   font-family: 'Julius Sans One';
 
+}
 
-  @media (min-width: 1024px) {
-    width: 37.5vw !important;
-    max-width: 1150px;
+
+@media (min-width: 1024px) {
+  input {
+  width: 37.5vw !important;
+  max-width: 1150px;
   }
 }
+
 
 input:focus {
   border-color: rgba(68, 153, 177) !important;
@@ -70,14 +77,16 @@ textarea {
 
   /* width:max-content; */
 
-
-  @media (min-width: 1024px) {
-    width: 37.5vw !important;
-    max-width: 1150px;
-
-    
-  }
 }
+
+
+@media (min-width: 1024px) {
+  textarea {
+  width: 37.5vw !important;
+  max-width: 1150px;
+}
+}
+
 
 textarea:focus {
   border-color: rgba(68, 153, 177) !important;
@@ -104,13 +113,17 @@ textarea:focus {
   font-size: 16px;
   transition: background-color 0.3s;
   font-family: 'Julius Sans One';
-
-  @media (min-width: 1024px) {
-    width: 37.5vw !important;
-    max-width: 1150px;
-
-  }
 }
+
+
+@media (min-width: 1024px) {
+  #form .appointment-button  {
+
+  width: 37.5vw !important;
+  max-width: 1150px;
+}
+}
+
 
 #form .appointment-button:hover {
   background-color:rgba(205, 104, 76); /* Change color on hover */
