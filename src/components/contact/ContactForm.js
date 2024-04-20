@@ -60,7 +60,7 @@ const ContactForm = () => {
       setIsSubmitting(true);
       try {
         const response = await axios.post(
-          '/src/.netlify/functions/submit', // Use the Netlify function URL for handling form submissions
+          '/.netlify/functions-internal/submit', // Use the Netlify function URL for handling form submissions
           {
             ...formData,
             captchaToken,
