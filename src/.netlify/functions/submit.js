@@ -10,7 +10,7 @@ exports.handler = async function (event) {
     // Configure the transporter for nodemailer using environment variables
     const transporter = nodemailer.createTransport({
       // if email service is big like google or outlook it only need its name
-      //service: process.env.EMAIL_SERVICE, // Use the EMAIL_SERVICE environment variable
+      service: process.env.EMAIL_SERVICE, // Use the EMAIL_SERVICE environment variable
 
       host: process.env.EMAIL_HOST, //  SMTP server
       port: process.env.EMAIL_PORT,
