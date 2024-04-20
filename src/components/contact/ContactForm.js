@@ -60,7 +60,7 @@ const ContactForm = () => {
       setIsSubmitting(true);
       try {
         const response = await axios.post(
-          '/.netlify/functions/submit', // Use the Netlify function URL for handling form submissions
+          '/src/.netlify/functions/submit', // Use the Netlify function URL for handling form submissions
           {
             ...formData,
             captchaToken,
@@ -100,12 +100,13 @@ const ContactForm = () => {
         <textarea id="message" name="message" value={formData.message} onChange={handleChange} />
         {errors.message && <p className="error-message">{errors.message}</p>}
       </div>
+
       <Recaptcha
-  size="normal"
-  id="recaptcha-google"
-  sitekey={process.env.REACT_APP_RECAPTCHA_SITEKEY || 'your_placeholder_site_key'}
-  onChange={handleCaptchaChange} 
-/>
+        size="normal"
+        id="recaptcha-google"
+        sitekey={process.env.REACT_APP_RECAPTCHA_SITEKEY}  // Use the correct environment variable key here
+        onChange={handleCaptchaChange} 
+      />
       <button className="appointment-button" type="submit" disabled={isSubmitting}>
         {isSubmitting ? 'Submitting...' : 'Submit'}
       </button>
