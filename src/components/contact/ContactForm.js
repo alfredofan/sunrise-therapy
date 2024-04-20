@@ -54,6 +54,7 @@ const ContactForm = () => {
     setCaptchaToken(value);
   };
 
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateForm() && captchaToken) {
