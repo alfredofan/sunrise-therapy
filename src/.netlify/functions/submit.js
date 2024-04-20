@@ -50,8 +50,3 @@ exports.handler = async function (event) {
 
 
 
-EMAIL_HOST=smtp.office365.com
-EMAIL_PORT=587
-EMAIL_SECURE=true
-EMAIL_USER=your_email@example.com
-EMAIL_PASSWORD=your_outlook_password
