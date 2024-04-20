@@ -6,10 +6,8 @@ const OffsetNavLink = ({ to, children }) => {
   const handleClick = (e) => {
     e.preventDefault();
     const target = document.querySelector(to);
-    console.log(target); // Check if the target element is found
     if (target) {
-      const offset = target.offsetTop - 150;
-      console.log(offset); // Check the calculated offset value
+      const offset = target.offsetTop - 150; // Adjusted offset
       window.scrollTo({
         top: offset,
         behavior: 'smooth',

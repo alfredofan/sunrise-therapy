@@ -47,15 +47,15 @@ const Navbar = () => {
       </a>
       <div className="nav-links">
         {/* Using ScrollingNavLink component instead of regular anchor tags to land 150px below the section*/}
-        <Link to="/#about-section" >About</Link>
-        <Link to="/#services-section" >Services</Link>
+        <OffsetNavLink to="#about" >About</OffsetNavLink>
+        <OffsetNavLink to="#services" >Services</OffsetNavLink>
         {/* <ScrollingNavLink to="/#clients">Clients</ScrollingNavLink> */}
-        <Link to="#contact-section">Contact</Link>
+        <OffsetNavLink to="#contact">Contact</OffsetNavLink>
    
       </div>
 
       <div className="appointment-button">
-      <Link to="#contact-section"><button onClick={handleAppointmentClick}>Book an Appointment</button></Link>
+      <OffsetNavLink to="#contact"><button onClick={handleAppointmentClick}>Book an Appointment</button></OffsetNavLink>
       </div>
 
       <OverlayNav isOpen={isNavOpen} onClose={() => setIsNavOpen(false)} />
