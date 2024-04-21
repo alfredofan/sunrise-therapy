@@ -61,14 +61,13 @@ const ContactForm = () => {
       setIsSubmitting(true);
       try {
         const response = await axios.post(
-          '/.netlify/functions/submit-form',
+          '/.netlify/functions/submit-form', // Updated function endpoint
           {
             name: formData.name,
             email: formData.email,
             message: formData.message,
           }
         );
-  
         console.log('Form submitted:', response.data);
         setFormData(initialFormState);
         setIsSubmitting(false);
