@@ -50,7 +50,7 @@ const Footer = () => {
               </a> */}
 
               
-              <a href="mailto:rachel@sunrisetherapy.com.au" target="_blank" rel="noopener noreferrer">
+              <a href="mailto:admin@sunrisetherapy.com.au" target="_blank" rel="noopener noreferrer">
               <i className="fa fa-envelope" ariaHidden="true"></i>
                 {/* <img src={YouTubeIcon} alt="YouTube" /> */}
               </a>

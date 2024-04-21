@@ -20,7 +20,7 @@ const ContactInfo = () => {
       </p><br />
 
       <a className="font-small link"
-      href="mailto:rachel@sunrisetherapy.com.au" title="Email me">
+      href="mailto:admin@sunrisetherapy.com.au" title="Email me">
           <i className="fa fa-envelope font-small" ariaHidden="true"></i>
           rachel@sunrisetherapy.com.au
       </a><br />
