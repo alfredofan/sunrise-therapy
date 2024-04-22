@@ -49,7 +49,6 @@ const Navbar = () => {
         {/* Using ScrollingNavLink component instead of regular anchor tags to land 150px below the section*/}
         <OffsetNavLink to="#about" >About</OffsetNavLink>
         <OffsetNavLink to="#services" >Services</OffsetNavLink>
-        {/* <ScrollingNavLink to="/#clients">Clients</ScrollingNavLink> */}
         <OffsetNavLink to="#contact">Contact</OffsetNavLink>
    
       </div>

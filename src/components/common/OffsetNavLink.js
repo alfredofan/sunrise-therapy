@@ -1,10 +1,17 @@
 // src/components/common/OffsetNavLink.js
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const OffsetNavLink = ({ to, children }) => {
-  const handleClick = (e) => {
+  const navigate = useNavigate();
+
+  const handleClick = async (e) => {
     e.preventDefault();
+
+    // First navigate to the root page ("/")
+    await navigate('/');
+
+    // Then navigate to the specified section
     const target = document.querySelector(to);
     if (target) {
       const offset = target.offsetTop - 150; // Adjusted offset
