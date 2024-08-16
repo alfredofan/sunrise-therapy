@@ -40,8 +40,15 @@ const OverlayNav = ({ isOpen, onClose }) => {
     <div className={overlayClass} ref={overlayRef} tabIndex={isOpen ? 0 : -1} onClick={onClose}>
       <div className="overlay-content">
         {/* Using ScrollingNavLink component instead of regular anchor tags to land 150px below the section*/}
+        <OffsetNavLink to="#home" >Home</OffsetNavLink>
         <OffsetNavLink to="#about" >About</OffsetNavLink>
-        <OffsetNavLink to="#services" >Services</OffsetNavLink>
+        {/* <OffsetNavLink to="#services" >Services</OffsetNavLink> */}
+
+
+        <Link to="/services"  onClick={() => window.scrollTo(0, 0)}>
+          Services
+        </Link>
+
         {/* <ScrollingNavLink to="/#clients">Clients</ScrollingNavLink> */}
         <OffsetNavLink to="#contact">Contact</OffsetNavLink>
         <OffsetNavLink to="#contact">Book an <br></br>Appointment</OffsetNavLink>

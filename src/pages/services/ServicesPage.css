@@ -24,7 +24,7 @@ font-family: 'Julius Sans One';
   margin-top: calc(100px + 10vh)!important;
   /* max-width: 1200px; */
   margin: auto;
-  padding: 20px;
+  /* padding: 20px; */
   color: rgba(128, 128, 128);
 
 }
@@ -38,6 +38,8 @@ font-family: 'Julius Sans One';
   
   @media screen and (max-width: 768px) {
     margin-bottom: 5rem  !important;
+    padding: 0 20px !important;
+
 
   }
 
@@ -56,6 +58,7 @@ font-family: 'Julius Sans One';
 
   @media screen and (max-width: 768px) {
     flex-direction: column; /* Stack items vertically on smaller screens */
+    padding: 0 20px;
 
 
   }

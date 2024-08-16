@@ -1,9 +1,9 @@
 // src/components/about/About.js
 import React, { useEffect } from 'react';
 import './About.css';
-import Rachel from '../../assets/images/rachel1.1-no-bg.png';
-import Brie from '../../assets/images/brie_square-no-bg.png';
-import Juliette from '../../assets/images/Juliette_no_bg1.3.png';
+import Rachel from '../../assets/images/rachel-no-bg-original.png';
+import Brie from '../../assets/images/jessica-no-bg-original.png';
+import Juliette from '../../assets/images/juliette_no_bg-original.png';
 
 
 
@@ -77,7 +77,29 @@ const About = () => {
                 <div className="bio-text">
                 <h2  className='font-medium-large'>Rachel</h2>
                 <p>
-                As a dedicated Occupational Therapist, I earned my Bachelor of Occupational 
+                Meet Rachel, our dedicated Occupational Therapist and Founder of Sunrise
+                Therapy.
+                <br></br><br></br>
+
+
+
+                ‘Since 2014, I&#39;ve immersed myself in the disability space, driven by a passion for
+                celebrating the unique strengths of every individual. Starting as a disability support
+                worker whilst studying, I progressed to roles including Occupational Therapist,
+                Supervising Occupational Therapist, and Multidisciplinary Team Leader. However,                 I
+                realised that to truly deliver the quality services I believed in, I needed to take the
+                leap and found Sunrise Therapy.<br></br><br></br>
+                My approach centres around developing personalised therapy plans that celebrate
+                the strengths of neurodivergent individuals and those with sensory differences. Using
+                sensory, interoceptive, and evidence-based interventions, I empower each person to
+                achieve their goals. I collaborate with participants, their support networks, and the
+                broader multidisciplinary team for holistic outcomes.<br></br><br></br>
+                Outside work, I enjoy sunrise walks with my dog, swimming, reading, and nature.’
+
+
+
+
+                {/* As a dedicated Occupational Therapist, I earned my Bachelor of Occupational 
                 Therapy from the Australian Catholic University. My journey in the disability 
                 sector began as a disability support worker, before evolving into an OT and 
                 then Supervising Occupational Therapist and later a Multidisciplinary Team 
@@ -93,35 +115,16 @@ const About = () => {
                 their goals. My commitment extends to working closely with participants, their 
                 support networks, and the broader multidisciplinary team for optimal outcomes. 
                 Beyond my professional life, I find joy in activities such as sunrise walks, 
-                swimming, reading, going to the beach, and spending time in nature.
+                swimming, reading, going to the beach, and spending time in nature. */}
                 </p>
                 </div>
             </div>
             
+
+
+
+
             <div className="bio-item reverse">
-                
-                <div className="bio-img ">
-                <img src={Brie} alt="Professional 2" />
-                </div>
-
-                <div className="bio-text">
-                <h2 className='font-medium-large'>Brie</h2>
-                <p>
-                Meet Brie, our dedicated virtual administrator at Sunrise Therapy. With over a
-                decade of experience in the public health field, Brie specializes in providing 
-                top-notch administrative support. From the first client contact, Brie efficiently
-                manages referrals, accounts, and day-to-day tasks, such as scheduling
-                appointments. Her strong communication and organizational skills play a vital role
-                in supporting the team and ensuring therapists can focus on delivering the best
-                care to our participants. Brie takes pride in her commitment to efficiency and
-                attention to detail.
-                </p>
-                </div>
-
-            </div>
-
-
-            <div className="bio-item ">
                
                 <div className="bio-img ">
                 <img src={Juliette} alt="Professional 2" />
@@ -131,12 +134,19 @@ const About = () => {
                 <div className="bio-text">
                 <h2 className='font-medium-large'>Juliette</h2>
                 <p>
-                Meet Juliette, our accomplished Mental Health Occupational Therapist at Sunrise 
-                Therapy. <br></br><br></br>
-                "With over seven years of experience in the field, I have dedicated myself 
-                to service the community through the National Disability Insurance Scheme (NDIS), 
-                working with individuals across a broad spectrum of diagnoses including those aged 
-                12 and above."
+                Meet Juliette, our accomplished Mental Health Occupational Therapist at Sunrise
+                Therapy.<br></br><br></br>
+                "With over seven years of experience in the field, I&#39;ve dedicated myself to serving the
+                community through the National Disability Insurance Scheme (NDIS), working with
+                individuals across a broad spectrum of diagnoses, including those aged 12 and
+                above. As a practitioner committed to neuroaffirming principles, I wholeheartedly
+                embrace and celebrate diversity."
+                <br></br><br></br>
+                Her dedication and proficiency significantly contribute to our commitment to providing
+                top-notch services. Juliette is an invaluable member of our team, drawing upon her
+                expertise in sensory modulation, cognitive-behavioural strategies, and mindfulness
+                techniques to empower her clients. She helps them cultivate resilience, enhance
+                self-awareness, and build meaningful connections with their environments.
                 
                 
                 
@@ -162,6 +172,55 @@ const About = () => {
                 </p>
                 </div>
             </div>
+
+
+
+
+
+
+            <div className="bio-item ">
+                
+                <div className="bio-img ">
+                <img src={Brie} alt="Professional 2" />
+                </div>
+
+                <div className="bio-text">
+                <h2 className='font-medium-large'>Jessica</h2>
+                <p>
+                Meet Jessica, our dedicated virtual administrator at Sunrise Therapy, 
+                with over a decade of experience in Allied Health. Jessica manages 
+                referrals, accounts, and day-to-day tasks, such as scheduling appointments.<br></br><br></br>
+                
+                Her strong communication and organizational skills play a vital role in supporting 
+                the team and ensuring therapists can focus on delivering the best care to our participants. 
+                Working part-time as a practitioner in private practice herself, Jessica knows the 
+                value of admin support and takes pride in her commitment to efficiency and attention to detail.
+
+
+
+
+                {/*                 
+                Meet Brie, our dedicated virtual administrator at Sunrise Therapy. With over a
+                decade of experience in the public health field, Brie specializes in providing 
+                top-notch administrative support.<br></br><br></br>
+                From the first client contact, Brie efficiently
+                manages referrals, accounts, and day-to-day tasks, such as scheduling
+                appointments.<br></br><br></br>
+                Her strong communication and organizational skills play a vital role
+                in supporting the team and ensuring therapists can focus on delivering the best
+                care to our participants. Brie takes pride in her commitment to efficiency and
+                attention to detail. 
+                */}
+                </p>
+
+
+
+                </div>
+
+            </div>
+
+
+
 
 
             </div>

@@ -15,9 +15,11 @@ const Hero = () => {
         <p className="hero-subheadline font-medium"> 
           in Sydney&#39;s Northern Beaches and North Shore
         </p>
-        <button className="hero-button" >
-        <Link to="/#services-section" >Get Started</Link>
+        <Link to="/#services-section" >
+        <button className="hero-button" aria-label="Get started with services">
+          Get Started
         </button>
+        </Link>
       </div>
 
     </div >

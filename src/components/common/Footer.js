@@ -2,7 +2,12 @@
 import React from 'react';
 import Logo from '../../assets/images/Logo500px.png';
 import AfLogo from '../../assets/images/personal_logo_gray.png';
-import ScrollingNavLink from './OffsetNavLink.js'; 
+import ScrollingNavLink from './OffsetNavLink.js';
+import PrivacyPolicy from './PrivacyPolicy.js'; 
+import TermsAndConditions from './TermsAndConditions.js'; 
+
+
+
 
 
 
@@ -50,12 +55,12 @@ const Footer = () => {
               </a> */}
 
               
-              <a href="mailto:admin@sunrisetherapy.com.au" target="_blank" rel="noopener noreferrer">
-              <i className="fa fa-envelope" ariaHidden="true"></i>
+              <a href="mailto:admin@sunrisetherapy.com.au" target="_blank" rel="noopener noreferrer" aria-label="Email Sunrise Therapy">
+                <i className="fa fa-envelope" ariaHidden="true"></i>
                 {/* <img src={YouTubeIcon} alt="YouTube" /> */}
               </a>
 
-              <a href="tel:0424739331">
+              <a href="tel:0424739331" aria-label="Call Sunrise Therapy">
               <i className="fa fa-phone" aria-hidden="true"></i>
                 {/* <img src={WhatsAppIcon} alt="WhatsApp" /> */}
               </a>
@@ -76,7 +81,12 @@ const Footer = () => {
 
         <div className="footer-section contact">
           <p className="bold">Contact</p>
-          <p>0423 549 767</p>
+          <a 
+            href="tel:0424739331" className="font-small link" 
+            title="Call Sunrise Therapy"
+            aria-label="Call Sunrise Therapy at 0423 549 767">
+              0423 549 767
+          </a>
           {/* <p>rachel@sunrisetherapy.com.au</p> */}
         </div>
 
@@ -94,7 +104,7 @@ const Footer = () => {
 
         <div className="footer-section location">
           <p className="bold">Our Location</p>
-          <p>Mobile Servicing <br></br>Metropolitan Sydney</p>
+          <p>Mobile Servicing <br></br>Northern Beaches and<br></br>North Shore Sydney</p>
           {/* Mobile Services: Bringing Therapy to Your Doorstep in the Northern Beaches Area */}
         </div>
       </div>
@@ -102,7 +112,7 @@ const Footer = () => {
 
       <div id="Af">
           <a href="https://alfredofaustino.com">
-            <img src={AfLogo} alt="AfLogo" />
+            <img src={AfLogo} alt="Alfredo Faustino Logo" />
             <p  className="bold">Website Developed By <br></br>Alfredo Faustino</p>
 
           </a>
@@ -111,15 +121,20 @@ const Footer = () => {
 
 
         <div id="CopyrightAndPrivacy">
-          
           <div className="footer-section copyright">
-              <p>&copy; {new Date().getFullYear()} Sunrise Therapy</p>
+              <p>Copyright &copy; {new Date().getFullYear()} Sunrise Therapy | ABN 20 955 868 155</p>
           </div>
 
           <div className="footer-section">
-              <a href="#">Privacy Policy</a>
-          </div>
-      </div>
+          <p><PrivacyPolicy />&nbsp;|&nbsp;<TermsAndConditions /></p>
+          
+        </div>
+        </div>
+
+
+
+
+
       
 
       </footer>

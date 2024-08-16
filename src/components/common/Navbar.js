@@ -4,7 +4,7 @@ import OverlayNav from './OverlayNav';
 import HamburgerMenu from './HamburgerMenu';
 import OffsetNavLink from './OffsetNavLink'; // Import the new component
 import './Navbar.css'; // CSS file for Navbar styles
-import logoImage from '../../assets/images/Logo500px.png';
+import logoImage from '../../assets/images/Logo250px.png';
 import { Link } from 'react-router-dom';
 
 
@@ -47,8 +47,15 @@ const Navbar = () => {
       </a>
       <div className="nav-links">
         {/* Using ScrollingNavLink component instead of regular anchor tags to land 150px below the section*/}
+        <OffsetNavLink to="#home" >Home</OffsetNavLink>
         <OffsetNavLink to="#about" >About</OffsetNavLink>
-        <OffsetNavLink to="#services" >Services</OffsetNavLink>
+        {/* <OffsetNavLink to="#services" >Services</OffsetNavLink> */}
+
+
+        <Link to="/services"  onClick={() => window.scrollTo(0, 0)}>
+          Services
+        </Link>        
+        
         <OffsetNavLink to="#contact">Contact</OffsetNavLink>
    
       </div>

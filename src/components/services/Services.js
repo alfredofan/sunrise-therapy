@@ -44,7 +44,7 @@ const servicesData = [
 
   {
     name: 'Mental Health Assessment and Intervention',
-    description: 'Specialized expertise, holistic therapies, and individualised interventions by our dedicated occupational therapist.',
+    description: 'Specialised expertise, holistic therapies, and individualised interventions by our dedicated occupational therapist.',
     link: '/services#mental-health-assessment-and-intervention',
     button: 'Learn More',
 

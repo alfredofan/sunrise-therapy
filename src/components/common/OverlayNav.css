@@ -108,13 +108,14 @@ OVERLAY ANIMATION CONFIGURATION
 
 
 .overlay-content {
-  position: relative;
-  top: 25%;
+  position: fixed;
+
+  margin-top: 20vh;
   width: 100%;
   text-align: center;
   /* margin-top: 30px; */
   opacity: 1; /* Set initial opacity to 1 */
-  transition: opacity 0.5s ; /* Add transition for fade-out effect */
+  transition: opacity 0.3s ; /* Add transition for fade-out effect */
 }
 
 .overlay a {
@@ -123,9 +124,21 @@ OVERLAY ANIMATION CONFIGURATION
   font-size: 36px;
   color: #f1f1f1;
   display: block;
-  transition: 0.3s ;
+  transition: 0.1s !important;
   
   font-family: 'Julius Sans One';
+
+    /* bold font */
+    /* font-weight: 900;  */
+
+    /* extra bold with shadow */
+     /*
+    text-shadow:
+      1px 1px 0 #000,   /* Shadow to the right and down 
+      -1px -1px 0 #000, /* Shadow to the left and up 
+      1px -1px 0 #000,  /* Shadow to the right and up 
+      -1px 1px 0 #000;  /* Shadow to the left and down 
+      */
 
 }
 

@@ -73,6 +73,19 @@ font-family: 'Julius Sans One';
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-family: 'Julius Sans One';
+
+
+    /* bold font */
+    font-weight: 900; 
+
+    /* extra bold with shadow */
+     /*
+    text-shadow:
+      1px 1px 0 #000,   /* Shadow to the right and down 
+      -1px -1px 0 #000, /* Shadow to the left and up 
+      1px -1px 0 #000,  /* Shadow to the right and up 
+      -1px 1px 0 #000;  /* Shadow to the left and down 
+      */
 }
 
 .service-card button:hover {
@@ -85,12 +98,20 @@ font-family: 'Julius Sans One';
 
 
 .ot-services {
-  padding: 40px;
+  padding: 20px;
   text-align: center;
   background-color: #f8f8f8;
   /* border-radius: 8px; */
   margin-top: 50px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+  @media screen and (max-width: 768px) {
+    padding: 20px !important;
+
+
+  }
+
+
 }
 
 .ot-services h3 {

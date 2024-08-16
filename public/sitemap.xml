@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Home Page -->
+    <url>
+        <loc>https://sunrisetherapy.com.au/</loc>
+        <lastmod>2024-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- About Section on Home Page -->
+    <url>
+        <loc>https://sunrisetherapy.com.au/#about</loc>
+        <lastmod>2024-08-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Services Section on Home Page -->
+    <url>
+        <loc>https://sunrisetherapy.com.au/#services-section</loc>
+        <lastmod>2024-08-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Contact Section on Home Page -->
+    <url>
+        <loc>https://sunrisetherapy.com.au/#contact</loc>
+        <lastmod>2024-08-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Services Page -->
+    <url>
+        <loc>https://sunrisetherapy.com.au/services</loc>
+        <lastmod>2024-08-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Individual Service Sections -->
+    <url>
+        <loc>https://sunrisetherapy.com.au/services#functional-assessments</loc>
+        <lastmod>2024-08-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sunrisetherapy.com.au/services#daily-living-skills-intervention</loc>
+        <lastmod>2024-08-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sunrisetherapy.com.au/services#sensory-and-interoception-assessment-and-intervention</loc>
+        <lastmod>2024-08-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sunrisetherapy.com.au/services#sil-and-sda-assessments</loc>
+        <lastmod>2024-08-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sunrisetherapy.com.au/services#mental-health-assessment-and-intervention</loc>
+        <lastmod>2024-08-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sunrisetherapy.com.au/services#assistive-technology</loc>
+        <lastmod>2024-08-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sunrisetherapy.com.au/services#access-reports-for-the-ndis</loc>
+        <lastmod>2024-08-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sunrisetherapy.com.au/services#nature-therapy</loc>
+        <lastmod>2024-08-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>

@@ -6,7 +6,8 @@
   flex: 1;
   color: rgb(205, 104, 76);
   line-height: 1.8;
-  max-width: 90%;
+  max-width: 100%;
+  
   /* padding-right: 60px; */
 
   @media (max-width: 1024px) {

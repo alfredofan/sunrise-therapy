@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
   
 }
 
@@ -18,7 +18,8 @@
   padding-bottom: 0px !important;
   align-items: center;
   font-family: 'Julius Sans One';  
-  width: 100%;
+  max-width: 100%;
+  
 }
 
 .bold {
@@ -47,7 +48,7 @@
 }
 
 .footer-section {
-  padding: 10px;
+  padding: 20px;
 
 }
 
@@ -55,6 +56,7 @@
   max-height: 150px !important; /* Adjust the height as needed */
   width: auto !important;
 }
+
 
 
 #SitemapAndDetails {
@@ -95,7 +97,7 @@ a:hover {
 }
 
 #CopyrightAndPrivacy {
-padding-bottom: 10px;
+margin-bottom: 10px;
 }
 
 #CopyrightAndPrivacy,
@@ -132,13 +134,24 @@ padding-bottom: 10px;
 @media screen and (max-width: 768px) {
   .footer {
     flex-wrap: wrap;
+
+  }
+
+  #Af  {
+    margin-top: 20px;
   }
 
   .footer-section {
-    width: 100vw !important;
+    width: 80vw !important;
     padding: 10px;
 
   }
+
+  .footer-sub-section {
+    display: flex; /* Make it a flex container */
+    flex-direction: row !important; /* Arrange flex items horizontally */
+  }
+  
 
   #LogoAndSocial {
     flex-wrap: wrap;
@@ -171,12 +184,16 @@ padding-bottom: 10px;
     padding-bottom: 5px !important;
   }
 
-  #CopyrightAndPrivacy p {
-    padding-top: 15px !important;
-  }
+  /* #CopyrightAndPrivacy p {
+    padding: 15px !important;
+  }  */
 
   #CopyrightAndPrivacy .footer-section {
-    padding: 2px !important;
+    padding: 15px !important;
+  }
+
+  #CopyrightAndPrivacy .footer-section.copyright {
+    padding: 5px !important;
   }
 
 }

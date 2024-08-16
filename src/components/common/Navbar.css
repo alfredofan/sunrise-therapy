@@ -10,6 +10,7 @@
   font-family: 'Julius Sans One';
   width:100%;
   position: fixed;
+  left: 0;
   top:0;
   transition: background-color 0.6s ease, box-shadow 0.4s ease;/* Add a smooth transition */
 
@@ -50,13 +51,15 @@
 
 .nav-links {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 .nav-links a {
   text-decoration: none;
   color:  rgba(205, 104, 76);
   font-size: 16px;
+  padding: 10px 8px; /* Add padding to increase the clickable area */
+
   transition: color 0.3s;
   font-weight: bold;
   
@@ -69,12 +72,30 @@
 .appointment-button button {
   background-color:  rgba(68, 153, 177);
   color: #fff;
-  padding: 10px 20px;
+  /* Recomended all touch targets must be 24px large, or leave sufficient space
+old spacing:   padding: 10px 20px;
+
+  */
+  padding: 12px 24px;
+
   border: none;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s;
   font-family: 'Julius Sans One';
+
+
+    /* bold font */
+    font-weight: 900; 
+
+    /* extra bold with shadow */
+     /*
+    text-shadow:
+      1px 1px 0 #000,   /* Shadow to the right and down 
+      -1px -1px 0 #000, /* Shadow to the left and up 
+      1px -1px 0 #000,  /* Shadow to the right and up 
+      -1px 1px 0 #000;  /* Shadow to the left and down 
+      */
 
 }
 

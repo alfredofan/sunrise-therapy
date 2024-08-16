@@ -23,6 +23,7 @@ body{
 background-color: rgb(255, 255, 255);
 font-family: 'Julius Sans One';
 z-index: 0;
+height: 100% !important;
 }
 
 

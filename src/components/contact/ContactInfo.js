@@ -20,12 +20,18 @@ const ContactInfo = () => {
       </p><br />
 
       <a className="font-small link"
-      href="mailto:admin@sunrisetherapy.com.au" title="Email me">
+        href="mailto:admin@sunrisetherapy.com.au" 
+        title="Send an email to Sunrise Therapy"
+        aria-label="Send an email to Sunrise Therapy" 
+      >
           <i className="fa fa-envelope font-small" ariaHidden="true"></i>
-          rachel@sunrisetherapy.com.au
+          admin@sunrisetherapy.com.au
       </a><br />
 
-      <a href="tel:0424739331" className="font-small link" title="Call me">
+      <a href="tel:0424739331" className="font-small link" 
+        title="Call Sunrise Therapy"
+        aria-label="Call Sunrise Therapy at 0423 549 767"
+      >
         <i className="fa fa-phone font-small" ariaHidden="true"></i>
           0423 549 767
       </a>
