@@ -2,8 +2,10 @@
 import React, { useEffect } from 'react';
 import './About.css';
 import Rachel from '../../assets/images/rachel-no-bg-original.png';
-import Brie from '../../assets/images/jessica-no-bg-original.png';
-import Juliette from '../../assets/images/juliette_no_bg-original.png';
+import Brie from '../../assets/images/brie_square-no-bg.png';
+import Juliette from '../../assets/images/juliette_no_bg-enhanced.png';
+import Sam from '../../assets/images/sam_square-no-bg-enhanced.png';
+import Tessa from '../../assets/images/tessa_square-no-bg-centered.png';
 
 
 
@@ -75,7 +77,7 @@ const About = () => {
                 </div>
                 
                 <div className="bio-text">
-                <h2  className='font-medium-large'>Rachel</h2>
+                <h2  className='font-medium-large'>Rachel (Occupational Therapist)</h2>
                 <p>
                 Meet Rachel, our dedicated Occupational Therapist and Founder of Sunrise
                 Therapy.
@@ -132,7 +134,7 @@ const About = () => {
 
 
                 <div className="bio-text">
-                <h2 className='font-medium-large'>Juliette</h2>
+                <h2 className='font-medium-large'>Juliette (Occupational Therapist)</h2>
                 <p>
                 Meet Juliette, our accomplished Mental Health Occupational Therapist at Sunrise
                 Therapy.<br></br><br></br>
@@ -181,25 +183,13 @@ const About = () => {
             <div className="bio-item ">
                 
                 <div className="bio-img ">
-                <img src={Brie} alt="Professional 2" />
+                <img src={Brie} alt="Professional 3" />
                 </div>
 
                 <div className="bio-text">
-                <h2 className='font-medium-large'>Jessica</h2>
+                <h2 className='font-medium-large'>Brie (Admin)</h2>
                 <p>
-                Meet Jessica, our dedicated virtual administrator at Sunrise Therapy, 
-                with over a decade of experience in Allied Health. Jessica manages 
-                referrals, accounts, and day-to-day tasks, such as scheduling appointments.<br></br><br></br>
-                
-                Her strong communication and organizational skills play a vital role in supporting 
-                the team and ensuring therapists can focus on delivering the best care to our participants. 
-                Working part-time as a practitioner in private practice herself, Jessica knows the 
-                value of admin support and takes pride in her commitment to efficiency and attention to detail.
-
-
-
-
-                {/*                 
+                  
                 Meet Brie, our dedicated virtual administrator at Sunrise Therapy. With over a
                 decade of experience in the public health field, Brie specializes in providing 
                 top-notch administrative support.<br></br><br></br>
@@ -210,7 +200,119 @@ const About = () => {
                 in supporting the team and ensuring therapists can focus on delivering the best
                 care to our participants. Brie takes pride in her commitment to efficiency and
                 attention to detail. 
+                  
+                  {/* 
+                Meet Jessica, our dedicated virtual administrator at Sunrise Therapy, 
+                with over a decade of experience in Allied Health. Jessica manages 
+                referrals, accounts, and day-to-day tasks, such as scheduling appointments.<br></br><br></br>
+                
+                Her strong communication and organizational skills play a vital role in supporting 
+                the team and ensuring therapists can focus on delivering the best care to our participants. 
+                Working part-time as a practitioner in private practice herself, Jessica knows the 
+                value of admin support and takes pride in her commitment to efficiency and attention to detail.
                 */}
+
+
+                </p>
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+            <div className="bio-item reverse">
+               
+                <div className="bio-img ">
+                <img src={Tessa} alt="Professional 4" />
+                </div>
+
+
+                <div className="bio-text">
+                <h2 className='font-medium-large'>Tessa (Occupational Therapist)</h2>
+                <p>
+                Tessa is an experienced Occupational Therapist with a strong passion for supporting
+                neurodiverse individuals, those with complex mental health diagnoses, and forensic
+                clients. With over seven years of experience in the disability and NDIS sector, she
+                has taken on various roles, including leading national teams and managing
+                psychosocial caseloads. Tessa is dedicated to providing strength-based,
+                neuroaffirming therapy.<br></br><br></br>
+                Her practice focuses on fostering self-regulation, achieving employment goals,
+                promoting independence in self-care, and enhancing executive functioning skills.
+                <br></br><br></br>
+                Tessa has worked with individuals with a wide range of diagnoses, including autism
+                spectrum disorder, ADHD, anxiety, schizophrenia, post-traumatic stress disorder,
+                intellectual disability, borderline personality disorder, sensory processing difficulties,
+                and more.
+                
+                
+              
+                
+                 {/* With over seven years of expertise in mental health and accreditation, 
+                Juliette brings a wealth of experience to our team. Holding leadership 
+                experience, she specializes in various assessments, including Functional, 
+                SIL/SDA, Sensory, and AT assessments. Notably, Juliette can conduct assessments 
+                both on the Northern Beaches and through telehealth, providing flexibility and 
+                accessibility for our participants. Her dedication and proficiency contribute 
+                significantly to our commitment to providing top-notch mental health assessments 
+                and interventions. Juliette is an invaluable member of our team, embodying the 
+                values of Sunrise Therapy and enhancing the quality of care we offer to our 
+                participants. */}
+                </p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div className="bio-item ">
+                
+                <div className="bio-img ">
+                <img src={Sam} alt="Professional 5" />
+                </div>
+
+                <div className="bio-text">
+                <h2 className='font-medium-large'>Sam (Exercise Physiologist)</h2>
+                <p>
+                  
+                Since graduating with her Master’s degree in 2014, Samantha has been deeply
+                passionate about her role in the healthcare field, where she helps individuals
+                maintain their independence and improve their quality of life through engaging and
+                supportive exercise programs. She prides herself on her excellent communication
+                skills and ability to build rapport and confidence with every client.<br></br><br></br>
+                With 10 years of experience across hospital and NDIS settings, Samantha has
+                cultivated broad expertise in managing a wide range of conditions, including
+                neurological disorders such as Parkinson’s, cardiovascular and orthopaedic
+                conditions, and general health and fitness. She also has experience working with
+                neurodiverse individuals and those facing mental health challenges, alongside
+                extensive experience in hydrotherapy. Samantha is particularly motivated to work
+                with clients who are committed to achieving their personal goals through tailored
+                exercise programs. She services areas within 30-40 minutes of Frenchs Forest and
+                Hornsby.<br></br><br></br>
+                Outside of work, Samantha enjoys spending time with family and friends, loves being
+                outdoors, and staying active.
+                  
+                  {/* 
+                Meet Jessica, our dedicated virtual administrator at Sunrise Therapy, 
+                with over a decade of experience in Allied Health. Jessica manages 
+                referrals, accounts, and day-to-day tasks, such as scheduling appointments.<br></br><br></br>
+                
+                Her strong communication and organizational skills play a vital role in supporting 
+                the team and ensuring therapists can focus on delivering the best care to our participants. 
+                Working part-time as a practitioner in private practice herself, Jessica knows the 
+                value of admin support and takes pride in her commitment to efficiency and attention to detail.
+                */}
+
+
                 </p>
 
 
