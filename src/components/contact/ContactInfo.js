@@ -28,9 +28,9 @@ const ContactInfo = () => {
           admin@sunrisetherapy.com.au
       </a><br />
 
-      <a href="tel:0424739331" className="font-small link" 
+      <a href="tel:0494066554" className="font-small link" 
         title="Call Sunrise Therapy"
-        aria-label="Call Sunrise Therapy at 0423 549 767"
+        aria-label="Call Sunrise Therapy at 0494 066 554"
       >
         <i className="fa fa-phone font-small" ariaHidden="true"></i>
           0423 549 767
