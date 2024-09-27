@@ -33,7 +33,7 @@ const ContactInfo = () => {
         aria-label="Call Sunrise Therapy at 0494 066 554"
       >
         <i className="fa fa-phone font-small" ariaHidden="true"></i>
-          0423 549 767
+        0494 066 554
       </a>
 
     </div>
