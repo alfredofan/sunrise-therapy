@@ -60,7 +60,7 @@ const Footer = () => {
                 {/* <img src={YouTubeIcon} alt="YouTube" /> */}
               </a>
 
-              <a href="tel:0424739331" aria-label="Call Sunrise Therapy">
+              <a href="tel:0494066554" aria-label="Call Sunrise Therapy">
               <i className="fa fa-phone" aria-hidden="true"></i>
                 {/* <img src={WhatsAppIcon} alt="WhatsApp" /> */}
               </a>
@@ -82,10 +82,10 @@ const Footer = () => {
         <div className="footer-section contact">
           <p className="bold">Contact</p>
           <a 
-            href="tel:0424739331" className="font-small link" 
+            href="tel:0494 066 554" className="font-small link" 
             title="Call Sunrise Therapy"
-            aria-label="Call Sunrise Therapy at 0423 549 767">
-              0423 549 767
+            aria-label="Call Sunrise Therapy at 0494 066 554">
+              0494 066 554
           </a>
           {/* <p>rachel@sunrisetherapy.com.au</p> */}
         </div>
